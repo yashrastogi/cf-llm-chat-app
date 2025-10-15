@@ -1,4 +1,4 @@
-name = "cloudflare-ai-app"
+name = "llm-chat-app"
 main = "src/index.js"
 compatibility_date = "2025-01-01"
 
@@ -13,7 +13,7 @@ class_name = "ChatHistory"
 
 [[migrations]]
 tag = "v1"
-new_classes = ["ChatHistory"]
+new_sqlite_classes = ["ChatHistory"]
 
 # Static assets binding for frontend
 [assets]
