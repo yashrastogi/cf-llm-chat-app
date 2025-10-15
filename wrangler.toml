@@ -1,0 +1,21 @@
+name = "cloudflare-ai-app"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+# AI binding for Workers AI
+[ai]
+binding = "AI"
+
+# Durable Objects for chat history management
+[[durable_objects.bindings]]
+name = "CHAT_HISTORY"
+class_name = "ChatHistory"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["ChatHistory"]
+
+# Static assets binding for frontend
+[assets]
+directory = "./public"
+binding = "ASSETS"
